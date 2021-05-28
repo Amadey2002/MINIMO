@@ -84,6 +84,10 @@ nav a:hover, nav a:active{
     animation-duration: 0.5s;
 }
 
+.hamburger input[type="checkbox"]{
+    visibility: hidden;
+}
+
 main{
     margin-left: 50pt;
     margin-right: 80pt;
@@ -275,7 +279,6 @@ footer div{
     }
 
     div.hamburger{ 
-        /* z-index: 4; */
         position: absolute;
         right: 40px;
         top: 20px;
@@ -308,6 +311,7 @@ footer div{
     div.hamburger > nav > a{
         display: block;
         margin: 5px;
+        padding-right: 30px;
     }
     
     div.hamburger > input:checked ~ nav{ 
@@ -333,8 +337,6 @@ footer div{
 }
 
 @media screen and (max-width: 320px) {
-    
-    
     main{ 
         margin: 0;
     }
