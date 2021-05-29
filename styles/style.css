@@ -119,6 +119,10 @@ main #post1 .coment{
     color: grey;
 }
 
+main #post1 a{
+    text-decoration: none;
+}
+
 main #post2{
     color: grey;
     margin-top: 100px;
@@ -151,6 +155,10 @@ main #post3 .post2Left{
 main #post3 .post2Right{
     text-align: center;
     margin-right: 130px;
+}
+
+main a img:hover, main a img:active{
+    transform: rotate(10deg);
 }
 
 main #mailing{
