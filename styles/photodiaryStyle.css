@@ -178,3 +178,85 @@ main #quotation p{
 #alsoLike .content img:hover, #alsoLike .content img:active{
     transform: rotate(10deg);
 }
+
+@media screen and (max-width: 1024px) {
+    body{ 
+        /* margin: 0 20px 0 20px; */
+    }
+   
+    header img{
+        width:100%;
+        height: auto;
+    }
+    #alsoLike .content > div{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+  
+    #alsoLike .content > div a{
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main, header{ 
+        margin: 10px;
+    }
+
+    div.hamburger{ 
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+        background: url(../images/mainPage/check-list-4370669.svg) center/contain no-repeat;
+        background-color: white;
+    }
+    
+    div.hamburger > input{display: none}
+    div.hamburger > label{
+        display: block;
+        width: 38px;
+        height: 38px;
+        padding: 0px;
+        cursor: pointer;
+    }
+    
+    div.hamburger > nav{
+        display: none;
+        background-color: white;
+        border: 1px solid grey;
+        border-radius: 5px;
+        position: relative;
+        right: 100px;
+        top: 10px;
+        
+    }
+    
+    div.hamburger > nav > a{
+        display: block;
+        margin: 5px;
+        padding-right: 30px;
+    }
+    
+    div.hamburger > input:checked ~ nav{ 
+        display: inline-block;
+    }
+
+   main #post2 img, main #post3 img, main #post4 img{
+       width: 90%;
+   }
+
+   main #mailing{
+        min-width: 300px;
+        margin:0;
+   }
+
+   main #mailing div input{
+    margin-left: 20%;
+   }
+
+    main .readMore{
+        min-width: 300px;
+    }
+}
